@@ -50,5 +50,18 @@ int main()
 	if (infile.is_open())
 	{
 		//Looping every line
+		while (getline (infile, Line))
+		{
+			//and show it here
+			cout << Line << '\n';
+		}
+
+		//closing file and done
+		infile.close();
 	}
+
+	//if file cannot be found, this's will appear
+	else cout << "Unable to open file";
+
+	return 0;
 }
