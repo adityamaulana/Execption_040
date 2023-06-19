@@ -24,6 +24,14 @@ int main()
 	while (true)
 	{
 		cout << " - ";
+		
+		//getting every character in one line
+		getline(cin, Line);
+		
+		//Loop will stop when you input "Q" Character
+		if(Line == "Q") break;
 
+		//Write and input grade from "Line" to the file
+		outfile << Line << endl;
 	}
 }
