@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExceptionStandar.cpp" />
     <ClCompile Include="ioFile.cpp" />
     <ClCompile Include="IoFileWithPATH.cpp" />
     <ClCompile Include="ManualExep.cpp" />
