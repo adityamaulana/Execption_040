@@ -29,5 +29,9 @@ int main()
 		//loop will stop when you input a "Q" character
 
 		if(Baris == "q") break;
+		//write and input grade from 'line' to the file
+		outfile << Baris << endl;
 	}
+	//end from writing and now close the file
+	outfile.close();
 }
