@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="ioFile.cpp" />
     <ClCompile Include="IoFileWithPATH.cpp" />
+    <ClCompile Include="ManualExep.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
