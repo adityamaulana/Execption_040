@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -34,4 +35,29 @@ int main()
 	}
 	//end from writing and now close the file
 	outfile.close();
+
+	//Opening file on writing mode
+	ifstream infile;
+	//point on a file
+	infile.open("fileexample.txt");
+
+	cout << endl << "> Open and read file" << endl;
+	//if there's a file, then
+	if (infile.is_open())
+	{
+		//looping every line
+		while (getline(infile, Baris))
+		{
+			//and show it here
+			cout << Baris << '\n';
+		}
+
+		//closing file and done
+		infile.close();
+	}
+
+	//if file cannot be found, this will appear
+	else cout << "Unable to open file";
+
+	return 0;
 }
