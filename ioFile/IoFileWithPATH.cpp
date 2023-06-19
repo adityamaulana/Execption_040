@@ -34,4 +34,21 @@ int main()
 		//Write and input grade from "Line" to the file
 		outfile << Line << endl;
 	}
+
+	//end from writing now closing file
+	outfile.close();
+
+	//Opening file on read mode
+	ifstream infile;
+
+	//Point on a file
+	infile.open(Filename,ios::in);
+
+	cout << endl << ">= Open and read file " << endl;
+	
+	//if there's a file
+	if (infile.is_open())
+	{
+		//Looping every line
+	}
 }
