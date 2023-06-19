@@ -21,4 +21,7 @@ int main()
 			/*This will be execute because Data Array only have 3 element*/
 		}
 		cout <<"Last Tag Line" << endl;
+		/* Tag 2, Program will work and wont stop even there's an error*/
+
+		return 0;
 	}
